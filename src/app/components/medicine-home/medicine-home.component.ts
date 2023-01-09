@@ -8,12 +8,12 @@ import { HttpService } from 'src/app/core/http/http.service';
   styleUrls: ['./medicine-home.component.scss']
 })
 export class MedicineHomeComponent implements OnInit {
-  pincode!:string;
-  isPinCodeAvailable:boolean = false ;
-   pincodeDetails:any;
+  pincode!: string;
+  isPinCodeAvailable: boolean = false;
+  pincodeDetails: any;
 
-   @ViewChild('closeBtn',{read:ElementRef}) closeBtn!:ElementRef
-  constructor(private http:HttpService) { }
+  @ViewChild('closeBtn', { read: ElementRef }) closeBtn!: ElementRef
+  constructor(private http: HttpService) { }
 
   ngOnInit(): void {
   }

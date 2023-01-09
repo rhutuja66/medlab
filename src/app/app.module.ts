@@ -3,20 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { MedicineHomeComponent } from './components/medicine-home/medicine-home.component';
+import { ViewProductDetailsComponent } from './components/view-product-details/view-product-details.component';
+import { ViewProductDetailsCategoryComponent } from './components/view-product-details-category/view-product-details-category.component';
+import { TopDealsComponent } from './components/top-deals/top-deals.component';
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { TopDealsComponent } from './components/top-deals/top-deals.component';
 
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
-import { TopDealsViewComponent } from './components/top-deals-view/top-deals-view.component';
-import { ViewProductDetailsCategoryComponent } from './components/view-product-details-category/view-product-details-category.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginModule } from './login/login.module';
+import { CartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [
@@ -27,9 +31,8 @@ import { ViewProductDetailsCategoryComponent } from './components/view-product-d
     PageNotFoundComponent,
     MedicineHomeComponent,
     TopDealsComponent,
-    TopDealsViewComponent,
-    ViewProductDetailsCategoryComponent,
-
+    ViewProductDetailsComponent,
+    ViewProductDetailsCategoryComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,9 @@ import { ViewProductDetailsCategoryComponent } from './components/view-product-d
     BrowserAnimationsModule,
     CarouselModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    LoginModule,
+    CartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

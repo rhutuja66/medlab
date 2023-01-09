@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "med-lab-test": {
+      "hosting": {
+        "medlab": [
+          "med-lab-test"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "med-lab-test"
+  }
+}
